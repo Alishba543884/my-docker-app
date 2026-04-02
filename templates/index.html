@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shoe Store</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>👟 Online Shoe Store</h1>
+
+<div class="container">
+
+{% for shoe in shoes %}
+<div class="card">
+<h2>{{ shoe.name }}</h2>
+<p>Price: {{ shoe.price }}</p>
+<button>Buy Now</button>
+</div>
+{% endfor %}
+
+</div>
+
+</body>
+</html>
